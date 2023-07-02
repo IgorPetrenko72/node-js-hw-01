@@ -1,4 +1,4 @@
-const contacts = require("./db/db");
+const contacts = require("./contacts");
 
 const { Command } = require('commander');
 const program = new Command();
@@ -33,8 +33,3 @@ const invokeAction = async ({action, id, name, email, phone}) => {
 }
 
 invokeAction(argv);
-// invokeAction({action: "list"});
-// invokeAction({action: "getById", id: "u9kgwNWGi3uUUwh0b8V49"});
-// invokeAction({action: "add", title: "Worm", author: "John C. McCrae"});
-// invokeAction({action: "updateById", id: "uNrjVoY1Ll0GFOof6t4yR", title: "Ward", author: "John C. McCrae"});
-// invokeAction({action: "deleteById", id: "uNrjVoY1Ll0GFOof6t4yR"});
